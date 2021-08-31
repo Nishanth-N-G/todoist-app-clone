@@ -52,7 +52,6 @@ const TASKS_HEADER_MAPPING = {
     INBOX: "Inbox",
     TODAY: "Today",
     NEXT_7: "Next 7 days",
-
 }
 
 const TaskItems = ({ selectedTab, tasks }) => {
