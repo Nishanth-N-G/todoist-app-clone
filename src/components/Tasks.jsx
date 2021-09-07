@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, text } from 'react';
+import { useState } from 'react';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 import dateFnsFormat from "date-fns/format";
