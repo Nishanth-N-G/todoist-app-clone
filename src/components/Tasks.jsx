@@ -86,7 +86,7 @@ const Tasks = ({ selectedTab }) => {
             <div className="add-task-btn"
                 onClick={() => setShowAddTask((prevState) => !prevState)}>
                 <span className="plus"> + </span>
-                <span className="add-task-text" onClick> Add task </span>
+                <span className="add-task-text"> Add task </span>
             </div>
             {showAddTask && <AddTask onAddTask={addNewTask} onCancel={() => setShowAddTask(false)} />}
             {tasks.length > 0 ? <TaskItems tasks={tasks} selectedTab={selectedTab} /> : (<p>No tasks yet</p>)}
