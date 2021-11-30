@@ -130,3 +130,34 @@ body{
         }
     }
 }
+
+.add-task-dailog input {
+    width: 100%;
+    margin: 10px 0px;
+    height: 30px;
+}
+
+.add-task-action-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns-container {
+    margin: 10px 0px 0px 5px;
+}
+
+
+
+.btns-container button {
+    margin-right: 15px;
+    background-color: #df244f;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+.task-show-container {
+    display: flex;
+    justify-content: space-evenly;
+}

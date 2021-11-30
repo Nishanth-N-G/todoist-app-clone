@@ -60,17 +60,31 @@ const TaskItems = () => {
     if (selectedTab === "NEXT_7") {
         return tasks.filter((task) =>
             isAfter(task.newDate, new Date()) && isBefore(task.newDate, addDays(new Date(), 7)))
-            .map((task) => (<p>{task.newTask}  {dateFnsFormat(new Date(task.newDate), FORMAT)} {" "}</p>));
+            .map((task) => (<div className="task-show-container">
+                <h4>{task.newTask}</h4>
+                <h5>{dateFnsFormat(new Date(task.newDate), FORMAT)}</h5>
+            </div>
+            ));
     }
 
     if (selectedTab === "TODAY") {
         return tasks.filter((task) =>
             isToday(task.newDate))
-            .map((task) => (<p>{task.newTask}  {dateFnsFormat(new Date(task.newDate), FORMAT)} {" "}</p>));
+            .map((task) => (
+                <div className="task-show-container">
+                    <h4>{task.newTask}</h4>
+                    <h5>{dateFnsFormat(new Date(task.newDate), FORMAT)}</h5>
+                </div>
+            ));
     }
 
     return tasks
-        .map((task) => (<p>{task.newTask}  {dateFnsFormat(new Date(task.newDate), FORMAT)} {" "}</p>));
+        .map((task) => (
+            <div className="task-show-container">
+                <h4>{task.newTask}</h4>
+                <h5>{dateFnsFormat(new Date(task.newDate), FORMAT)}</h5>
+            </div>
+        ));
 }
 
 function TasksTwo() {
